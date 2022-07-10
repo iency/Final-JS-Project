@@ -1,17 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyge - Watch Anime Online!</title>
+    <title>GetJoy - Watch Anime Online!</title>
     <link rel="icon" href="./assets/favicon1.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/89aecba58c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            
+    <div id="app">
+        <div class="navbar">
+            <div class="row">
+                <div class="nav__container">
+                    <a href="/" class="nav__logo--link">
+                        <img src="./assets/logo.png" class="nav__logo--img" alt="">
+                    <div class="nav__links">
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">Find your title</a>
+                        <a href="#" class="nav__link--btn">Contact</a>
+                    </div>
+                </div>  
+                <div class="header__wrapper">
+                    <h1 class="header__title">
+                        Browse All Anime
+                    </h1> 
+                    <div class="header__input-wrapper">
+                        <input type="text" placeholder="Search by Title, Genre or Keyword">
+                        <div class="search__icon--wrapper">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>  
+                <div class="overlay">
+                </div>   
+            </div>
         </div>
+
+        <section id="search">
+            <div class="bar">
+
+            </div>
+            <div class="content__wrapper">
+                <h1 class="search__text--black">Search results:</h1>
+                <div class="price__filter">
+                    <h2>
+                        Price range
+                    </h2>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 <script src="./index.js"></script>
