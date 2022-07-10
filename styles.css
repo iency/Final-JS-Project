@@ -170,6 +170,12 @@ input {
     flex-wrap: wrap;
 }
 
+.fa-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 .search__text--black {
     color: black;
     font-size: 28px;
@@ -183,10 +189,6 @@ input {
     flex-wrap: wrap;
 }
 
-.movie {
-    width: 50%;
-}
-
 .movie-card {
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -194,6 +196,7 @@ input {
     transition: 0.3s;
     cursor: pointer;
     border-radius: 10px;
+    width: 30%;
   }
 
   .movie-card:hover {
@@ -202,8 +205,44 @@ input {
 
   .movie-card_container {
     padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h3-wrapper {
+    text-align: center;
+    margin: 12px 0 16px 0;
+  }
+
+  .card_description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-left {
+    margin-right: 12px;
+    white-space: nowrap;
   }
 
   .poster-img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+  }
+
+  .margin {
+    margin-bottom: 24px;
+  }
+
+  .info-btn {
+    cursor: pointer;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 2px #5d3eff;
+    background-color: rgb(129, 125, 125);
+    color: #f3f3f3!important;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }

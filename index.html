@@ -28,9 +28,9 @@
                         Browse All Anime
                     </h1> 
                     <div class="header__input-wrapper">
-                        <input type="text" placeholder="Search by Title, Genre or Keyword">
+                        <input type="text" placeholder="Search by Title, Genre or Keyword" onkeydown="search(event)">
                         <div class="search__icon--wrapper">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass" onclick="searchWithButton()"></i>
                         </div>
                     </div>
                 </div>  
@@ -45,24 +45,19 @@
             </div>
             <div class="content__wrapper">
                 <h1 class="search__text--black">Search results:</h1>
-            </div>
-            <div class="search__results">
-                <div class="row">
-                    <div class="movie-list">
-                        <div class="movie">
-                            <div class="movie-card">
-                                <div class="movie-card_container">
-                                    <h3>Title</h3>
-                                    <p><b>Year:</b> 2013</p>
-                                    <p><b>imdbID:</b> tt1905041</p>
-                                    <p><b>Type:</b> movie</p>
-                                    <p><b>Poster:</b> <img src="https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_SX300.jpg" class="poster-img" alt=""></p>
-                                </div>
-                            </div>    
+                <i class="fa-solid fa-spinner"></i>
+                <div class="search__results">
+                    <div class="row">
+                        <div class="movie-list">
+                            <div class="movie">
+                                <div class="movie-card">
+                                </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    
+            
         </section>
     </div>
 </body>
