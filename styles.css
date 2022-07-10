@@ -43,9 +43,12 @@ p {
 
 .nav__links {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-weight: 500;
     font-size: 18px;
+    width: 100%;
+    max-width: 430px;
 }
 
 .nav__link {
@@ -103,6 +106,10 @@ input {
     padding-left: 20px;
 }
 
+input:focus {
+    border: none;
+}
+
 .search__icon--wrapper {
     display: flex;
     align-items: center;
@@ -119,7 +126,7 @@ input {
 
 .navbar {
     position: relative;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;   
 }
 
 .overlay {
@@ -127,6 +134,7 @@ input {
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     position: absolute;
     top: 0;
