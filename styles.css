@@ -170,17 +170,12 @@ input {
     flex-wrap: wrap;
 }
 
-.fa-spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
 .search__text--black {
     color: black;
     font-size: 28px;
     line-height: 1.25;
     font-weight: bold;
+    visibility: hidden;
 }
 
 .movie-list {
