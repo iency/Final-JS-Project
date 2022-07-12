@@ -161,6 +161,16 @@ input {
     flex-direction: column;
 }
 
+.bar {
+    position: absolute;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    margin-left: auto;
+    left: 0;
+    top: 0;
+    border-color: red;
+}
+
 .content__wrapper {
     margin: 0 auto;
     width: 100%;
