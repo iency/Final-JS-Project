@@ -152,6 +152,10 @@ input {
     pointer-events: none;
 }
 
+.nav__link:hover {
+    text-decoration: underline 2px;
+}
+
 /* SEARCH */
 
 #search {
